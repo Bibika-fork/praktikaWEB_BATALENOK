@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color & Blond</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ШАПКА -->
+    <div class="header-wrapper">
+        <img src="image/logo.png" alt="Logo" class="logo">
+
+        <header class="header">
+            <h1 class="site-title">Color & Blond</h1>
+
+            <!-- МЕНЮ с якорями -->
+            <nav class="nav">
+                <a href="#teacher-section">О нас</a>
+                <a href="#footer">Контакты</a>
+                <a href="#feedback-form">Помощь</a>
+            </nav>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <!-- Домик ведёт на форму обратной связи -->
+        <a href="#feedback-form">
+            <img src="image/home.png" alt="Home" class="home-icon">
+        </a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-grid">
+            <picture>
+                <source srcset="image/main_mobile.png" media="(max-width: 430px)">
+                <img src="image/main.png" alt="Color and Blonde" class="main-banner">
+            </picture>
+        </div>
+
+        <h3 class="bottom-title">
+            Онлайн-курсы<br>
+            для карьеры мечты
+        </h3>
+
+        <div class="course-btn-wrapper">
+            <a href="#feedback-form">
+                <button class="course-btn">
+                Записаться на курс
+            </button>
+
+            </a>
+            
+        </div>
+
+        <section class="courses">
+            <div class="course-card">
+                <img src="image/bleaching.png" alt="Обесцвечивание">
+            </div>
+            <div class="course-card">
+                <img src="image/basik.png" alt="Базовый курс">
+            </div>
+            <div class="course-card mobile-hide">
+                <img src="image/technik.png" alt="Техники окрашивания">
+            </div>
+        </section>
+
+        <div class="all-courses-wrapper">
+            <button class="all-courses-btn">Смотреть все</button>
+        </div>
+    </section>
+
+</div>
+
+<h3 class="bottom-title">
+    Подборка онлайн-<br>
+    курсов на любой вкус
+</h3>
+
+<section class="news-section">
+    <div class="news-title">
+        <span>News</span>
+    </div>
+    <div class="news-grid">
+        <div class="news-card">
+            <img src="image/koloristika.png" alt="Колористика">
+        </div>
+        <div class="news-card">
+            <img src="image/yhod.png" alt="Уход">
+        </div>
+        <div class="news-card">
+            <img src="image/blond.png" alt="Блонд">
+        </div>
+        <div class="news-card">
+            <img src="image/sedina.png" alt="Седина">
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК ПРЕПОДАВАТЕЛЯ (О НАС) - добавлен id="teacher-section" -->
+<section class="teacher-section" id="teacher-section">
+    <div class="teacher-content">
+        <div class="teacher-text">
+            <p>
+                “Меня зовут Екатерина Баталенок - преподаватель курсов
+                ‘Окрашивания волос’, специалист по обучению взрослых мастеров
+                с опытом работы и новичков в парикмахерском искусстве.
+                Мой личный профессиональный стаж более 18 лет.
+                Моя технология курса опробована на сотне учеников.”
+            </p>
+            <p class="separator">***</p>
+            <p>
+                <strong>
+                    Хотите создать своё уникальное окрашивание или помочь
+                    клиентам радоваться красоте своих волос?
+                </strong>
+                Здесь Вы найдете все необходимое для достижения цели.
+                Опытный колорист делится проверенными методами и ценными
+                советами, которые применимы ко всем видам окрашивания
+                от базовых до сложных и комбинированных.
+            </p>
+            <p>
+                Пошаговые инструкции проведут Вас через весь процесс
+                создания сложного окрашивания. Каждый этап подкреплен
+                реальными примерами и практическими заданиями,
+                чтобы закрепить теоретический материал.
+            </p>
+            <p>
+                Курс разработан легким и доступным языком,
+                поэтому подходит даже новичкам в сфере окрашивания.
+            </p>
+            <h4 class="teacher-bottom-text">
+                Откройте секрет успеха в окрашивании волос прямо сейчас!
+            </h4>
+        </div>
+        <div class="teacher-image">
+            <img src="image/teacher.png" alt="Екатерина Баталенок">
+        </div>
+    </div>
+</section>
+
+<h3 class="bottom-title">
+   Познакомьтесь<br>
+   с онлайн-курсами от Екатерины Баталенок <br>
+   ближе
+</h3>
+
+<div class="photo-wrapper">
+    
+    <img src="image/photo.png" alt="Вдохновение" class="photo">
+</div>
+
+<!-- БЛОК С ТАБАМИ -->
+<section class="tabs-block">
+    <input type="radio" name="tab" id="tab-experts" class="tabs-input" checked>
+    <input type="radio" name="tab" id="tab-practice" class="tabs-input">
+
+    <div class="tabs-header">
+        <label for="tab-experts" class="tab-label">
+            Эксперты направления
+        </label>
+        <label for="tab-practice" class="tab-label">
+            Практика и проекты
+        </label>
+    </div>
+
+    <div class="tabs-content">
+        <div id="content-experts" class="tab-content">
+            <div class="tab-text">
+                <p>
+                    Наши преподаватели — действующие колористы
+                    с опытом более 10 лет. Они делятся
+                    реальными кейсами, современными техниками
+                    окрашивания и профессиональными секретами,
+                    которые используют в работе с клиентами.<br>
+                    <a href="https://www.instagram.com/batalenok_colorist?igsh=ODZkcXo2bWpqc2Q1" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <p>Открыть страницу</p>
+                </a>
+                    
+                </p>
+            </div>
+            <div class="tab-image">
+                <img src="image/expert.jpg" alt="Эксперты">
+            </div>
+        </div>
+
+        <div id="content-practice" class="tab-content">
+            <div class="tab-text">
+                <p>
+                    После каждого урока вы выполняете практические
+                    задания и создаёте собственные проекты.
+                    Итоговые работы можно добавить в портфолио
+                    и использовать для развития карьеры.
+                </p>
+            </div>
+            <div class="tab-image">
+                <img src="image/practise.jpg" alt="Практика">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК ПРЕИМУЩЕСТВ -->
+<section class="benefits-block">
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="svg/info.svg" alt="Доступная информация" width="120" height="120">
+            </div>
+            <h4>Доступная <br>информация</h4>
+            <p>Материалы курсов <br>сможет понять каждый</p>
+        </div>
+        
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="svg/phone.svg" alt="Качественная обратная связь" width="120" height="120">
+            </div>
+            <h4>Качественная<br>обратная связь</h4>
+            <p>Преподаватель всегда на связи<br>и поможет решить любой вопрос</p>
+        </div>
+        
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="svg/clock.svg" alt="Свободный график без дедлайнов" width="120" height="120">
+            </div>
+            <h4>Свободный график<br>без дедлайнов</h4>
+            <p>Онлайн-курс легко совмещать<br>с работой и личной жизнью</p>
+        </div>
+        
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <img src="svg/strelki.svg" alt="Бессрочный доступ к видеоурокам и обновлениям" width="120" height="120">
+            </div>
+            <h4>Бессрочный доступ<br>к видеоурокам и обновлениям</h4>
+            <p>Можно вернуться к занятиям<br>и освежить знания в любой момент</p>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК ФОРМЫ НА ЧЁРНОМ ФОНЕ - добавлен id="feedback-form" -->
+<section class="feedback-outer" id="feedback-form">
+    <div class="feedback-block">
+        <div class="feedback-content">
+            <div class="feedback-text">
+                <h3 class="feedback-title">Поможем в выборе!</h3>
+                <p class="feedback-description">
+                    Если у вас есть вопросы о формате или вы не знаете что
+                    выбрать, оставьте свой номер: мы позвоним, чтобы
+                    ответить на все ваши вопросы.
+                </p>
+            </div>
+            
+            <form action="thanks.html" method="GET" class="feedback-form">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-input" placeholder="E-mail" required>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ПОДВАЛ (ФУТЕР) - добавлен id="footer" -->
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        
+        <div class="footer-col">
+            <h4 class="footer-title">Контактный центр</h4>
+            <a href="mailto:yanabatalyonok0101@gmail.com" class="footer-email">
+                yanabatalyonok0101@gmail.com
+            </a>
+
+            <div class="social-links">
+                <!-- Instagram: рабочая ссылка -->
+                <a href="https://www.instagram.com/batalenok_colorist?igsh=ODZkcXo2bWpqc2Q1" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="image/insta.png" alt="Instagram" width="36" height="36">
+                </a>
+                <!-- Telegram: временно пустая ссылка -->
+                <a href="#" class="social-icon">
+                    <img src="image/tg.png" alt="Telegram" width="36" height="36">
+                </a>
+                <!-- TikTok: временно пустая ссылка -->
+                <a href="#" class="social-icon">
+                    <img src="image/tt.png" alt="TikTok" width="36" height="36">
+                </a>
+                <!-- YouTube: временно пустая ссылка -->
+                <a href="#" class="social-icon">
+                    <img src="image/youtube.png" alt="YouTube" width="36" height="36">
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <ul class="footer-links">
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Отзыв согласия на обработку персональных данных</a></li>
+                <li><a href="#">Настройки Cookie</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <p class="footer-address">
+                230018, Республика Беларусь, г. Гродно,<br>
+                Глухово 8, пом.73
+            </p>
+        </div>
+        
+    </div>
+    
+    <div class="footer-bottom">
+        <p> 2026 Color&Blond. Все права защищены.</p>
+    </div>
+</footer>
+
+</body>
+</html>

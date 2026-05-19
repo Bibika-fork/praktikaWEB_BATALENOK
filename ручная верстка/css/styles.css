@@ -1,0 +1,1249 @@
+/*   ОБЩИЕ СТИЛИ   */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F8F8F8;
+    font-family:'Playfair Display', serif;
+    overflow-x:hidden;
+    display: grid;
+    place-items: center;
+    
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{ /*оформление гиперссылок*/
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:100%;
+    max-width:1700px;
+    margin:0 auto;
+    padding:24px 210px 0;
+}
+
+/*   ШАПКА   */
+
+.header-wrapper{
+    display:grid;
+    grid-template-columns:110px 1fr 90px;
+    align-items:center;
+    gap:20px;
+}
+
+/* ЛОГО СНАРУЖИ ШАПКИ */
+
+.logo{
+    width:110px;
+    height:110px;
+    object-fit:contain;
+}
+
+/* ШАПКА */
+
+.header{
+    width:100%;
+    height:100px;
+    background:#EBCFD1;
+    border-radius:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+}
+
+/* НАЗВАНИЕ */
+
+.site-title{
+    font-size:40px;
+    font-weight:600;
+    color:#111;
+}
+
+/* МЕНЮ */
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:70px;
+}
+
+.nav a{
+    font-size:24px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav a:hover{ /*ховер гиперссылок*/
+    opacity:0.7;
+}
+
+.footer-links a:hover{ /*линия для ссылок*/
+    text-decoration: underline;
+}
+
+/* ДОМИК СНАРУЖИ ШАПКИ */
+
+.home-icon{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+    justify-self:end;
+    cursor:pointer;
+}
+
+/*   БУРГЕР   */
+
+.burger{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.burger span{
+    width:30px;
+    height:3px;
+    background:#000;
+    border-radius:10px;
+}
+
+/*   HERO   */
+
+.hero{
+    margin-top:26px;
+}
+
+.hero-grid{
+    width:100%;
+    border-radius:40px;
+    overflow:hidden;
+}
+
+.main-banner{
+    width:100%;
+    display:block;
+    border-radius:40px;
+}
+
+
+
+/* Заголовок */
+
+.hero-title{
+    font-size:90px;
+    line-height:0.95;
+    color:#8F7668;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* Подзаголовок */
+
+.hero-subtitle{
+    font-family:'Playfair Display', sans-serif;
+    font-size:25px;
+    line-height:1.1;
+    color:#5A5A5A;
+    font-weight:400;
+}
+
+/* Кисточки */
+
+.brush{ /*декоративные элементы*/
+    position:absolute;
+    right:-40px;
+    bottom:-20px;
+    width:360px;
+}
+
+
+.bottom-title{ /*ТЕКСТ Н3*/
+    margin-top:40px;
+    text-align:center;
+    font-size:45px;
+    line-height:1.05;
+    font-weight:500;
+}
+
+/*   КНОПКА   */
+
+.course-btn-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.course-btn{
+    width:900px;
+    height:90px;
+
+    border:1px solid #000;
+    border-radius:50px;
+
+    background:transparent;
+
+    font-family:'Playfair Display', sans-serif;
+    font-size:35px;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.course-btn:hover{
+    background:#EBCFD1;
+}
+
+/*  КУРСЫ  */
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(3, 350px);
+    column-gap:160px;
+    justify-content:center;
+    padding:50px 0px 0;
+}
+
+/* КАРТОЧКА */
+
+.course-card{
+    width:350px;
+    height:350px;
+
+    position:relative;
+
+    overflow:hidden;
+    border-radius:30px;
+}
+
+/* КАРТИНКА */
+
+.course-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+/* Затемнение */
+
+.course-card::after{ /*эффекта*/
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.18);
+}
+
+
+/* Hover */
+
+.course-card:hover img{ /*масштабирование*/
+    transform:scale(1.05);
+}
+
+.all-courses-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* центр по горизонтали */
+    margin-top: 30px; /* отступ от карточек */
+}
+
+.all-courses-btn {
+    width: 178px;
+    height: 56px;
+    background-color: #F2D2D4; 
+    color: #000000;
+    border: none;
+    border-radius: 12px; /* если нужен скруглённый стиль */
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.all-courses-btn:hover {
+    opacity: 0.85;
+}
+
+/* Новости */
+
+.news-section{
+    margin-top:120px;
+
+    display:grid;
+    grid-template-columns:120px 1fr;
+    align-items:center;
+    column-gap:40px;
+}
+
+/* ЛЕВЫЙ ТЕКСТ */
+
+.news-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.news-title span{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg); /*трансформация*/
+
+    font-size:92px;
+    font-weight:700;
+    line-height:1;
+
+    color:#000;
+}
+
+/* СЕТКА */
+
+.news-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:31px;
+}
+
+/* КАРТОЧКА */
+
+.news-card{
+    width:100%;
+    max-width:342px;
+    height:455px;
+
+    overflow:hidden;
+    border-radius:28px;
+
+    position:relative;
+}
+
+/* КАРТИНКА */
+
+.news-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.news-card:hover img{
+    transform:scale(1.05);
+}
+
+.all-news-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* центр по горизонтали */
+    margin-top: 30px; /* отступ от карточек */
+}
+
+.all-news-btn {
+    width: 178px;
+    height: 56px;
+    background-color: #F2D2D4; 
+    color: #000000;
+    border: none;
+    border-radius: 12px; /*скругление углов*/
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.all-news-btn:hover {
+    opacity: 0.85;
+}
+
+/*  ПРЕПОДАВАТЕЛЬ  */
+
+.teacher-section{
+    margin-top:100px;
+    display:flex;
+    justify-content:center;
+}
+
+.teacher-content{
+    width:100%;
+    max-width:1100px;
+
+    background:#FEEDED;
+
+    border-radius:40px;
+
+    padding:50px;
+
+    display:grid;
+    grid-template-columns:1fr 400px;
+
+    gap:40px;
+    align-items:center;
+}
+
+.teacher-text{
+    font-size:20px;
+    line-height:1.2;
+    color:#111;
+}
+
+.teacher-text p{
+    margin-bottom:20px;
+}
+
+.teacher-text strong{
+    font-weight:700;
+}
+
+.separator{ /*оформление текста*/
+    font-weight:700;
+    letter-spacing:4px;
+}
+ 
+/*текст под фотографией*/
+.teacher-bottom-text{ 
+    margin-top:20px;
+
+    text-align:center;
+
+    font-size:30px;
+    color:#BD8B8B;
+
+    font-family:'Playfair Display', serif;
+    font-weight:600;
+}
+
+.teacher-image img{
+    width:300px;
+    height:500px;
+    object-fit:cover;
+    border-radius:30px;
+}
+
+.photo-wrapper { /*оформление картинки "Вдохновение"*/
+    margin-top:100px;
+    width: 60%;
+}
+
+.photo {
+    width: 100%;
+    display: block;
+}
+
+/* ========== БЛОК С ТАБАМИ 1360×650 ========== */
+.tabs-block{
+    width:100%;
+    max-width:1160px;
+    margin:80px auto;
+    background:#FEEDED;
+    border-radius:50px;
+    padding:40px 50px;    /* боковые отступы у розового фона */
+    overflow:hidden;
+}
+
+/* Верх табов — прямоугольная полоса во всю ширину (без отступов слева/справа) */
+.tabs-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    width:calc(100% + 100px);   /* растягиваем на всю ширину с учетом padding родителя */
+    margin-left:-50px;           /* сдвигаем влево, чтобы убрать левый отступ */
+    background:#FFFFFF;
+    padding:12px 50px;           /* теперь отступы внутри белой полосы такие же, как у родителя */
+    border-radius:0;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    box-sizing:border-box;
+}
+
+/* Кнопки табов */
+.tab-label{
+    position:relative;
+    padding:14px 34px;
+    border-radius:999px;
+    background:transparent;
+    font-size:25px;
+    font-weight:600;
+    color:#8F7668;
+    cursor:pointer;
+    transition:0.3s; /*переходы*/
+    white-space:nowrap;
+}
+
+/* Скрываем radio */
+.tabs-input{
+    display:none;
+}
+
+
+
+/* Активный таб */
+
+#tab-experts:checked ~ .tabs-header label[for="tab-experts"],
+#tab-practice:checked ~ .tabs-header label[for="tab-practice"]{
+    background:#F2D2D4;
+    color:#000;
+}
+
+/* Убираем старую линию */
+
+#tab-experts:checked ~ .tabs-header label[for="tab-experts"]::after,
+#tab-practice:checked ~ .tabs-header label[for="tab-practice"]::after{
+    display:none;
+}
+
+/* Hover */
+
+.tab-label:hover{
+    background:#f7e5e6;
+}
+
+/* Контент */
+
+.tabs-content{
+    margin-top:40px;
+}
+
+/* Вкладка */
+
+.tab-content{
+    display:none;
+
+    grid-template-columns:1fr 450px;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+/* Показываем активную */
+
+#tab-experts:checked ~ .tabs-content #content-experts{
+    display:grid;
+}
+
+#tab-practice:checked ~ .tabs-content #content-practice{
+    display:grid;
+}
+
+/* Текст */
+
+.tab-text p{
+    font-family:'Playfair Display', serif;
+    font-size:20px;
+    font-weight: 600;
+    line-height:1.7;
+    color:#2C2C2C;
+}
+
+/* Картинка */
+
+.tab-image img{
+    width:90%;
+    height:500px;
+    object-fit:cover;
+    border-radius:30px;
+}
+
+/* БЛОК ПРЕИМУЩЕСТВ  */
+.benefits-block {
+    width: 100%;
+    max-width: 1160px;
+    height: auto;
+    margin: 10px auto;
+    background: #FEEDED;
+    border-radius: 50px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Заголовок блока */
+.benefits-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C2C2C;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Сетка — теперь карточки сами распределяются равномерно */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 равные колонки */
+    gap: 50px;
+    justify-content: center;
+    align-items: start;
+}
+
+.benefit-card {
+    width: 100%;  /* занимает всю ширину своей колонки */
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px); /*трансформация*/
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Иконка 120×120 */
+.benefit-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+}
+
+.benefit-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Заголовок карточки */
+.benefit-card h4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2C2C2C;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* Текст карточки */
+.benefit-card p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #5A5A5A;
+    margin: 0;
+    text-align: center;
+}
+
+/* ========== БЛОК ФОРМЫ НА ЧЁРНОМ ФОНЕ ========== */
+.feedback-outer {
+    width: 100%;
+    background: #000000;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.feedback-block {
+    width: 100%;
+    max-width: 1160px;
+    height: 480px;
+    margin: 0 auto;
+    background: #FEEDED;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.feedback-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 60px 70px;
+    height: 100%;
+    align-items: center;
+}
+
+/* Левая часть */
+.feedback-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-title {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.feedback-description {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5A5A5A;
+}
+
+/* Правая часть — форма */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 18px 24px;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C2C2C;
+    background: #FFFFFF;
+    border: 1px solid #E0C8C8;
+    border-radius: 40px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: #B0A0A0;
+    font-weight: 400;
+}
+
+.form-input:focus {
+    border-color: #9F6060;
+    box-shadow: 0 0 0 3px rgba(159, 96, 96, 0.1); /*тени*/
+}
+
+/* Кнопка с градиентом */
+.submit-btn {
+    width: 100%;
+    padding: 18px 24px;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #9F6060 0%, #C47A7A 100%); /*градиент*/
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #8B5050 0%, #B06A6A 100%); /*градиент*/
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(159, 96, 96, 0.3); /*тени*/
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* ========== ПОДВАЛ (ФУТЕР) ========== */
+.footer {
+    width: 100%;
+    background: #1A1A1A;
+    margin-top: 80px;
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 0 20px;
+}
+
+/* Колонки */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* Email ссылка */
+.footer-email {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: 0.3s;
+    line-height: 1.5;
+}
+
+.footer-email:hover {
+    color: #9F6060;
+}
+
+/* Список ссылок */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: 0.3s;
+    line-height: 1.5;
+}
+
+.footer-links a:hover {
+    color: #9F6060;
+}
+
+/* Адрес */
+.footer-address {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Нижняя строка */
+.footer-bottom {
+    max-width: 1160px;
+    margin: 40px auto 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+    margin: 0;
+}
+
+/* ========== СОЦИАЛЬНЫЕ СЕТИ В ПОДВАЛЕ ========== */
+.social-links {
+    display: flex;
+    flex-direction: row;  /* гарантируем горизонтальное расположение */
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: nowrap;    /* запрещаем перенос на новую строку */
+}
+
+.social-icon { /*декоративные иконки*/
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-shrink: 0;       /* запрещаем сжатие иконок */
+}
+
+.social-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* ========== ВСЕ АДАПТИВНЫЕ СТИЛИ (СГРУППИРОВАНЫ В КОНЦЕ) ========== */
+
+/* Адаптив для табов (был внутри блока) */
+@media (max-width: 700px) {
+    .tabs-header {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 50px;
+    }
+    .tab-label {
+        padding: 10px 24px;
+        font-size: 20px;
+    }
+}
+
+/* Адаптив для преимуществ и других блоков */
+@media (max-width: 1300px) {
+    .benefits-block {
+        max-width: 100%;
+        height: auto;
+        padding: 30px 40px;
+    }
+    
+    .benefits-grid {
+        gap: 30px;
+    }
+    
+    .benefit-card {
+        padding: 30px;
+    }
+    
+    .benefit-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .benefit-card h4 {
+        font-size: 20px;
+    }
+    
+    .benefit-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .feedback-outer {
+        padding: 60px 0;
+        margin: 60px 0;
+    }
+    
+    .feedback-block {
+        height: auto;
+        margin: 0 20px;
+    }
+    
+    .feedback-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 50px;
+    }
+    
+    .feedback-title {
+        font-size: 32px;
+    }
+    
+    .feedback-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px){
+    .teacher-content{
+        grid-template-columns:1fr;
+        padding:40px;
+    }
+
+    .teacher-image{
+        display:flex;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-col:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-block {
+        padding: 30px 20px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .benefits-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .benefit-card {
+        padding: 25px;
+    }
+    
+    .benefit-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .feedback-outer {
+        padding: 40px 0;
+        margin: 40px 0;
+    }
+    
+    .feedback-block {
+        margin: 0 16px;
+        border-radius: 30px;
+    }
+    
+    .feedback-content {
+        padding: 30px 25px;
+        gap: 30px;
+    }
+    
+    .feedback-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .feedback-description {
+        font-size: 14px;
+    }
+    
+    .feedback-description br {
+        display: none;
+    }
+    
+    .form-input {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        margin-top: 50px;
+        padding: 40px 0 20px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+    
+    .footer-col:last-child {
+        grid-column: span 1;
+    }
+    
+    .footer-title {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+    
+    .footer-email,
+    .footer-links a,
+    .footer-address {
+        font-size: 14px;
+    }
+    
+    .footer-bottom {
+        margin-top: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        gap: 25px;
+        margin-top: 25px;
+        flex-wrap: nowrap;
+    }
+    
+    .social-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        padding:16px 14px 0;
+    }
+
+    /* ---------- ШАПКА ---------- */
+    .header-wrapper{
+        grid-template-columns:55px 1fr 36px;
+        gap:10px;
+        align-items:center;
+    }
+
+    .logo{
+        width:55px;
+        height:55px;
+    }
+
+    .home-icon{ /*декоративная иконка*/
+        width:32px;
+        height:32px;
+    }
+
+    .header{
+        height:60px;
+        border-radius:20px;
+        padding:0 16px;
+    }
+
+    .site-title{
+        font-size:18px;
+    }
+
+    /* СКРЫВАЕМ ОБЫЧНОЕ МЕНЮ */
+    .nav{
+        display:none;
+    }
+
+    /* ПОКАЗЫВАЕМ БУРГЕР */
+    .burger{
+        display:flex;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero{
+        margin-top:16px;
+    }
+
+    .hero-grid{
+        border-radius:24px;
+    }
+
+    .main-banner{
+        border-radius:24px;
+    }
+
+    /* ---------- СКРЫВАЕМ ЗАГОЛОВОК ---------- */
+    .bottom-title{
+        display:none;
+    }
+
+    /* ---------- СКРЫВАЕМ КНОПКУ ---------- */
+    .course-btn-wrapper{
+        display:none;
+    }
+
+    /* ---------- КУРСЫ ---------- */
+    .courses{
+        padding:20px 0 0;
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap:16px;
+        row-gap:16px;
+        justify-items:center;
+    }
+
+    /* КАРТОЧКИ */
+    .course-card{
+        width:100%;
+        max-width:170px;
+        height:260px;
+        border-radius:24px;
+    }
+
+    /* КАРТИНКИ */
+    .course-card img{
+        border-radius:24px;
+    }
+
+    .course-card img:hover{ /*фильтр для карточки*/
+    filter: brightness(80%);
+}
+
+    /* ТЕКСТ */
+    .course-card h4{
+        font-size:18px;
+        left:14px;
+        bottom:14px;
+        line-height:1;
+    }
+
+    /* СКРЫВАЕМ 3 КАРТОЧКУ */
+    .mobile-hide{
+        display:none;
+    }
+
+    .teacher-section{
+        margin-top:40px;
+    }
+
+    .teacher-content{
+        padding:24px;
+        border-radius:24px;
+        gap:30px;
+    }
+
+    .teacher-text{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .teacher-bottom-text{
+        font-size:24px;
+    }
+
+    .teacher-image img{
+        width:100%;
+        height:auto;
+        max-width:320px;
+        border-radius:24px;
+    }
+}
+
+/* Адаптив 1440px  */
+@media (max-width:1440px){
+    .container{
+        padding:24px 80px 0;
+    }
+
+    .site-title{
+        font-size:34px;
+    }
+
+    .nav{
+        gap:40px;
+    }
+
+    .bottom-title{
+        font-size:48px;
+    }
+
+    .courses{
+        grid-template-columns:repeat(3, 350px);
+        row-gap:10px;
+    }
+}
